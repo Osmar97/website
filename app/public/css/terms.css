@@ -1,0 +1,29 @@
+main {
+    color: white;
+    padding: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
+    max-width: 1400px;
+    margin: auto;
+    font-size: 20px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: hsl(38deg 22% 45%);
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+main ul {
+    margin: 50px;
+}

@@ -1,0 +1,205 @@
+.content {
+    margin: auto;
+}
+
+main {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.contentFunc {
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .left {
+    width: 70%;
+    animation: slide-left 1s;
+    opacity: 1;
+}
+
+.profile .left h2 {
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.profile .left h3 {
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+
+.profile .left .desc {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.profile .left .roles ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile .left .socialMedia {
+    margin-top: 30px;
+}
+
+.profile .left .socialMedia ul {
+    list-style-type: none;
+    margin-top: 30px;
+    display: inline;
+    padding: 30px 10px 25px 10px;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+}
+
+.profile .left .socialMedia ul li {
+    margin: 10px;
+    display: inline;
+    background-color: #1d1d1d;
+    font-size: 15px;
+}
+
+.profile .left .socialMedia ul li a {
+    text-align: center;
+    background-color: #1d1d1d;
+}
+
+.profile .left .socialMedia ul li a i {
+    background: none;
+    padding: 10px;
+    width: 50px;
+}
+
+.profile .left .roles ul li {
+    padding: 10px;
+    background-color: rgb(223, 223, 223);
+    font-weight: bold;
+    width: 30%;
+    display: inline;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background-color: #1d1d1d;
+}
+
+.profile .right {
+    width: 30%;
+    padding: 20px;
+    animation: slide-right 1s;
+    opacity: 1;
+}
+
+.profile .right img {
+    width: 450PX;
+    border: 1px solid #1d1d1d;
+    box-shadow: 1px 1px 10px #1d1d1d;
+}
+
+.pro {
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    box-shadow: 1px 1px 10px #1d1d1d;
+}
+
+@keyframes slide-right {
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left {
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .profile .right img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 941px) {
+    .contentFunc {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .profile {
+        display: grid;
+        grid-template-areas: 'bottom' 'bottom';
+        gap: 20px;
+    }
+    .profile .left {
+        grid-area: "bottom";
+        width: 100%;
+    }
+    .profile .right {
+        width: 100%;
+        grid-area: "top";
+    }
+    .profile .left h2 {
+        text-align: center;
+    }
+    .bottom {
+        bottom: 100%;
+    }
+    .profile .left .socialMedia ul {
+        padding: 30px 5px 25px 5px;
+        margin-bottom: 20px;
+    }
+    .profile .right img {
+        width: 100%;
+        /* or any custom size */
+        height: 100%;
+        object-fit: cover;
+        animation: slide-right 1s;
+        opacity: 1;
+    }
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.socialMedia a i {
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: black;
+    transition: .3s ease-in;
+    text-align: center;
+}
+
+.profile .left .socialMedia ul li a i:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 10px #b9963e;
+}

@@ -1,0 +1,185 @@
+body {
+    overflow: visible;
+    background-color: black;
+    position: relative;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*Login*/
+
+form h3 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contactForm {
+    width: 50%;
+    padding: 60px;
+    color: white;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 1px 1px 10px hsl(38deg 22% 45%);
+    border: 2px solid hsl(38deg 22% 45%);
+}
+
+.contactForm .formItem {
+    position: relative;
+    border: 3px solid #ccc;
+    padding: 0 10px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .3s all ease-in-out;
+}
+
+.contactForm .formItem label {
+    position: absolute;
+    font-size: 14px;
+    transform: translate(0, 14px) scale(1);
+    transition: all .1s ease-in-out;
+    transform-origin: top left;
+    z-index: -1;
+}
+
+.contactForm .formItem.active label {
+    transform: translate(0, 4px) scale(.75);
+    color: #ccc;
+}
+
+.contactForm .formItem input {
+    width: 100%;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: white;
+    padding: 20px 0 10px;
+    border: none;
+    z-index: 999;
+}
+
+.contactForm .texterror {
+    color: rgb(124, 9, 9);
+    margin-top: 5px;
+    font-style: italic;
+    display: none;
+    font-size: 13px;
+}
+
+.contactForm .submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    color: hsl(38deg 22% 45%);
+    cursor: pointer;
+    font-weight: bold;
+    border: 3px solid hsl(38deg 22% 45%);
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+.contactForm .submit:hover {
+    background-color: hsl(38deg 22% 45%);
+    color: black;
+}
+
+.contactForm .alert {
+    width: 100%;
+}
+
+.contactForm .formItem textarea {
+    width: 100%;
+    outline: none;
+    color: white;
+    background: none;
+    font-size: 15px;
+    padding: 20px 0 10px;
+    border: none;
+    resize: none;
+    height: 200px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f5857d;
+    color: rgb(105, 0, 0);
+    font-weight: lighter;
+    border-radius: 2px;
+    border: 1px solid rgb(105, 0, 0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.alert.success {
+    background-color: #04AA6D;
+    color: black;
+    font-weight: bold;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px hsl(38deg 22% 45%);
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+    color: black;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px hsl(38deg 22% 45%);
+}
+
+.alert.warning p{
+    color: black;
+    font-weight: bold;
+    
+}
+
+.alert.warning ul{
+    margin:20px;
+}
+
+.showPassword {
+    margin-top: 10px;
+}
+
+.showPassword p {
+    font-size: 13px;
+    display: inline;
+}
+
+@media screen and (max-width:919px) {
+    .contactForm {
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+
+/*Footer
+.bottom {
+    bottom: 0;
+    display: block;
+    position: relative;
+}

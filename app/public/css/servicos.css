@@ -1,0 +1,130 @@
+.contentFunc {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.headerIntroCompany {
+    position: relative;
+    padding: 150px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.headerIntroCompany h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.headerIntroCompany .introBar {
+    margin-bottom: 30px;
+    border: 1px solid white;
+}
+
+.headerIntroCompany .serviceTitle {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #b9963e;
+    color: white;
+}
+
+.headerIntroCompany .descriptionTitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-size: 15px;
+    animation: slide-left .7s;
+}
+
+.containerImage {
+    animation: slide-left .7s;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerImage .item {
+    width: calc(97%/3);
+}
+
+.containerImage .item figure {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #1d1d1d;
+}
+
+.containerImage .item span {
+    text-align: justify;
+    text-shadow: 1px 1px 10px white;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    border-radius: 5px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.separated {
+    margin-top: 90px;
+    border: 1px solid rgb(59, 59, 59);
+    margin-bottom: 30px;
+}
+
+.containerImage .item figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+.containerImage .item figure:hover .image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: grayscale(70%);
+}
+
+.containerImage .item span p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.containerImage .item span .HyperButton {
+    color: black;
+    margin-left: 10px;
+}
+
+.containerImage .item span .HyperButton button {
+    background-color: white;
+    width: auto;
+    color: black;
+    padding: 10px;
+    border: 3px solid white;
+}
+
+.containerImage .item span .HyperButton button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:919px) {
+    .headerIntroCompany {
+        padding: 0px;
+    }
+    .containerImage .item {
+        width: 100%;
+    }
+}

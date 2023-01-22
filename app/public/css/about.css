@@ -1,0 +1,321 @@
+body {
+    overflow: visible;
+}
+
+.content {
+    background-color: black;
+    position: relative;
+}
+
+.introCompany {
+    background-color: #000000;
+}
+
+header {
+    background-color: rgba(19, 19, 19);
+}
+
+.login-button a button {
+    margin-top: 10px;
+}
+
+.backColor {
+    box-shadow: 0px 20px 30px -15px hsl(38deg 22% 45%);
+}
+
+
+/*.nav-bar {
+    box-shadow: 0 8px 8px -4px #ac8b1f;
+}*/
+
+.nav-bar {
+    background-color: rgba(19, 19, 19);
+}
+
+.nav-link {
+    color: white;
+}
+
+.mobile-menu-icon {
+    color: black;
+}
+
+#icon {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.mobile-menu {
+    background-color: #1d1d1d;
+    color: #1d1d1d;
+}
+
+.bottom {
+    bottom: 0;
+    display: block;
+    position: relative;
+}
+
+.textCompany {
+    color: white;
+    padding: 4%;
+    display: flex;
+    text-align: center;
+    min-height: 90vh;
+    box-shadow: 3px 25px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 25px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 25px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.textCompany .left {
+    width: 45%;
+    height: 50vh;
+    animation: slide-left 1s;
+    padding: 20px;
+}
+
+.textCompany .left img {
+    width: 100%;
+    /* or any custom size */
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.textCompany .right {
+    padding: 0px 0px 0px 30px;
+    width: 50%;
+}
+
+.textCompany .right h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+    animation: showText 3s;
+}
+
+.textCompany .right p {
+    animation: showText 3s;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.textCompany .right ul {
+    animation: showText 3s;
+    text-align: justify;
+    padding: 0px 0px 0px 5%;
+}
+
+@keyframes slide-left {
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+}
+
+.team {
+    background-color: black;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.team h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.team .revealUp {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team h3 {
+    font-weight: 100;
+}
+
+.team .func {
+    display: flex;
+    color: white;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .func .card-container {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    padding-top: 30px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin: 20px;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.team .func .card-container .pro {
+    color: black;
+    background-color: hsl(38deg 22% 45%);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.team .func .card-container h3 {
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.team .func .card-container .round {
+    padding: 7px;
+    width: 200px;
+    height: 266px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+input[type='submit'].primary {
+    font-weight: bold;
+    background-color: hsl(38deg 22% 45%);
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type='submit'].primary:hover {
+    background-color: #1d1d1d;
+    color: hsl(38deg 22% 45%);
+}
+
+input[type='submit'].primary.ghost {
+    background-color: transparent;
+    color: hsl(38deg 22% 45%);
+    border-color: hsl(38deg 22% 45%);
+}
+
+input[type='submit'].primary.ghost:hover {
+    background-color: hsl(38deg 22% 45%);
+    color: black;
+}
+
+.skills {
+    background-color: hsl(38deg 22% 45%);
+    text-align: left;
+    padding: 16px;
+    color: black;
+    margin-top: 20px;
+    bottom: 0;
+    align-items: center;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    margin: auto;
+}
+
+.skills ul li {
+    border: 1px solid #000000;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+    text-align: center;
+}
+
+.skills ul .icons {
+    border: none;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .theList {
+    text-align: right;
+}
+
+.skills ul .icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.skills ul .icons a i {
+    font-size: 15px;
+    width: 20px;
+    opacity: 1;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+.skills ul .icons a i:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 919px) {
+    .textCompany {
+        display: block;
+        height: auto;
+        padding: 25px;
+    }
+    .textCompany .left {
+        width: 100%;
+        padding: auto;
+    }
+    .textCompany .right {
+        width: 100%;
+        padding: 0px;
+        padding-top: 10px;
+    }
+    .textCompany .right h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}

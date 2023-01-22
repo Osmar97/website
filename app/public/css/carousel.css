@@ -1,0 +1,124 @@
+.carousel {
+    height: 600px;
+    padding: 20px;
+}
+
+.carousel .carousel-item {
+    width: 550px;
+    height: 350px;
+    perspective: 250px;
+}
+
+.carousel .carousel-item {
+    width: 550px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-item p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px 10px black;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.row.slider-center {
+    position: absolute;
+    z-index: 99999;
+    padding: 20px;
+    background-color: transparent;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+}
+
+.prev {
+    float: left;
+    color: grey;
+    font-size: 30px;
+    font-weight: 800;
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 20px;
+    padding: 9px;
+    border-radius: 100%;
+    transition: .3s all ease-in-out;
+}
+
+.next {
+    float: right;
+    color: grey;
+    right: 30px;
+    font-size: 35px;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 20px;
+    right: 0;
+    transition: .3s all ease-in-out;
+}
+
+.next:hover,
+.prev:hover {
+    color: hsl(38deg 22% 45%);
+}
+
+
+/*.carousel {
+    background: transparent;
+    height: 700px;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+.carousel-cell {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.carousel-cell img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-cell p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px 10px black;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+*/
+
+@media screen and (max-width:1440px) {
+    .row.slider-center {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:919px) {
+    .row.slider-center {
+        left: 0;
+        right: 0;
+    }
+}
